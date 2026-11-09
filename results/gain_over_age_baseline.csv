@@ -1,0 +1,5 @@
+model,ΔROC AUC vs age only,95% CI
+Demographics (logistic),0.01168992362770327,+0.006 to +0.017
+All features (logistic),0.02395898576773481,+0.016 to +0.032
+Random forest,0.01792395426591631,+0.008 to +0.027
+XGBoost,0.02674880058373086,+0.017 to +0.036

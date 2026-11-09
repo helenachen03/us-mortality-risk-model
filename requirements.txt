@@ -1,0 +1,16 @@
+# Tested with Python 3.11
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.1
+xgboost==3.2.0
+shap==0.51.0
+lifelines==0.30.3
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib
+requests==2.34.2
+jupyter==1.1.1
+ipykernel==7.4.0
+nbformat
+nbconvert==7.17.2

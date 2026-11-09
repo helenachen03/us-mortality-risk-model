@@ -1,0 +1,20 @@
+{
+  "Age only (logistic)": {},
+  "Demographics (logistic)": {},
+  "All features (logistic)": {
+    "C": 0.06672367170464207
+  },
+  "Random forest": {
+    "max_depth": 10,
+    "max_features": 0.5,
+    "min_samples_leaf": 11
+  },
+  "XGBoost": {
+    "colsample_bytree": 0.767044709687721,
+    "learning_rate": 0.042734471318432575,
+    "max_depth": 2,
+    "min_child_weight": 19,
+    "reg_lambda": 0.3457997441375999,
+    "subsample": 0.6976502088991097
+  }
+}

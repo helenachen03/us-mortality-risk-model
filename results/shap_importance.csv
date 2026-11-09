@@ -1,0 +1,38 @@
+,mean_abs_shap
+Age (years),1.5623533
+Smoked 100+ cigarettes,0.23616429
+Female,0.22412504
+Waist circumference (cm),0.1787454
+BMI,0.14046787
+Education level,0.12975085
+HbA1c (%),0.119212426
+Arm circumference (cm),0.11311202
+LDL cholesterol (mg/dL),0.10892475
+Fasting glucose (mg/dL),0.1086597
+Race: Mexican American,0.098841816
+Systolic BP (mean of readings),0.09070172
+Missing: Waist circumference (cm),0.056345575
+Total cholesterol (mg/dL),0.05593618
+Missing: LDL cholesterol (mg/dL),0.053285282
+Triglycerides (mg/dL),0.05163395
+Diastolic BP (mean of readings),0.049354803
+Upper leg length (cm),0.039383624
+Missing: BMI,0.030943643
+Height (cm),0.030691175
+HDL cholesterol (mg/dL),0.0278211
+Race: Non-Hispanic Black,0.026406432
+Race: Non-Hispanic White,0.023868158
+Missing: Fasting glucose (mg/dL),0.023693485
+Race: Other Hispanic,0.018755632
+Missing: Upper leg length (cm),0.016707009
+Missing: HDL cholesterol (mg/dL),0.014254277
+Missing: Triglycerides (mg/dL),0.009003935
+Missing: Height (cm),0.0025105507
+Missing: HbA1c (%),0.0023562603
+Missing: Smoked 100+ cigarettes,0.0
+Missing: Total cholesterol (mg/dL),0.0
+Missing: Diastolic BP (mean of readings),0.0
+Missing: Systolic BP (mean of readings),0.0
+Missing: Arm circumference (cm),0.0
+Missing: Education level,0.0
+Race: Other / multiracial,0.0
