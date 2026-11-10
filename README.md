@@ -28,6 +28,18 @@ A 10-year all-cause mortality risk model built on **12,418 U.S. adults** from NH
 |---|---|---|
 | ![](figures/roc_pr_curves.png) | ![](figures/calibration.png) | ![](figures/shap_summary.png) |
 
+## Interactive demo
+
+A Streamlit app lets you enter age, body measurements, blood pressure and (optionally) lab values. It shows the predicted 10-year risk, how that compares with people of the same age and sex, and exactly which inputs push the estimate up or down.
+
+![Streamlit demo](figures/streamlit_demo.png)
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+The app uses the regularised logistic regression rather than XGBoost. The two are statistically tied on accuracy, and the logistic model's per-input contributions are exact, so every prediction can be explained without approximation. The model trains in about a second when the app starts, so no model file is needed. *This is a portfolio demonstration, not a clinical tool.*
+
 ## Approach
 
 - **Outcome.** Death from any cause within 120 months of the NHANES interview. Only survey cycles where **every survivor was followed for the full 10 years** are used; see [the labelling-bias note](#what-changed-from-the-original-course-project).
@@ -40,6 +52,8 @@ A 10-year all-cause mortality risk model built on **12,418 U.S. adults** from NH
 ## Repository
 
 ```
+├── app/
+│   └── streamlit_app.py                # interactive risk demo
 ├── notebooks/
 │   ├── 01_data_acquisition.ipynb       # download & merge NDI, NHANES, CDC WONDER
 │   ├── 02_population_clustering.ipynb  # K-means / hierarchical / DBSCAN on population subgroups

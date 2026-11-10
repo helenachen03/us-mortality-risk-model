@@ -9,7 +9,6 @@ from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from xgboost import XGBClassifier
 
 from .data import ALL_FEATURES, CATEGORICAL_FEATURES, DEMOGRAPHIC_FEATURES
 
@@ -48,12 +47,19 @@ def _logreg(features: list[str]) -> Pipeline:
     )
 
 
+def logistic_pipeline(features: list[str] = ALL_FEATURES) -> Pipeline:
+    """Scaled, imputed logistic regression (the model used by the Streamlit demo)."""
+    return _logreg(features)
+
+
 def build_models() -> dict[str, dict]:
     """Return {name: {"features", "pipeline", "param_dist"}}.
 
     The first two are deliberately simple baselines: the question is not just
     "which model wins" but "how much do clinical measurements add beyond age?"
     """
+    from xgboost import XGBClassifier  # imported lazily: needs OpenMP on macOS
+
     return {
         "Age only (logistic)": {
             "features": ["age"],
